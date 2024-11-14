@@ -1,1 +1,2 @@
+# Handwritten Digit Recognition
 <hr></hr> This project implements and trains neural networks for image classification using the MNIST dataset. It includes both a Feedforward Neural Network (FNN) and a Convolutional Neural Network (CNN). The project is structured with separate modules for data loading, model definitions, training, and testing. The models are trained using PyTorch, and the training process includes calculating the mean and standard deviation of the dataset for normalization. The trained models can be evaluated on the test set to measure their accuracy.
