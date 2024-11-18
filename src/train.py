@@ -33,7 +33,7 @@ def train(model, train_loader, valid_loader, criterion,optimizer, epochs=epochs)
             label = label.to(device)
             label_pred = model(data)
             loss = criterion(label_pred, label)
-            valid_loss = loss.item() * data.size(0)  # tf is data.size(0)
+            valid_loss = loss.item() * data.size(0)
             # update the number of correct predictions
             num_correct_preds_valid += (label_pred.softmax(-1).argmax(-1) == label).sum()
 
